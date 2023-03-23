@@ -23,10 +23,10 @@ if(isset($_POST['user_save']))
 $update_profile="update users set user_password='$user_password', user_firstname='$user_firstname', user_lastname='$user_lastname', user_address='$user_address' where user_id='$user_id'";
     if(mysqli_query($dbcon,$update_profile))
     {
-	echo "<script>alert('Account successfully updated!')</script>";
+	echo "<script>alert('Account Successfully Updated!')</script>";
         echo"<script>window.open('index.php','_self')</script>";
     }else{
-	echo "<script>alert('Error Found!')</script>";
+	echo "<script>alert('Error Found')</script>";
 	
 	}
 
