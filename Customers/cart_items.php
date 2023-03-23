@@ -6,7 +6,6 @@ if(!$_SESSION['user_email'])
 
     header("Location: ../index.php");
 }
-
 ?>
 
 <?php
@@ -35,9 +34,6 @@ if(!$_SESSION['user_email'])
 	if(isset($_GET['delete_id']))
 	{
 		
-		
-		
-	
 		$stmt_delete = $DB_con->prepare('DELETE FROM orderdetails WHERE order_id =:order_id');
 		$stmt_delete->bindParam(':order_id',$_GET['delete_id']);
 		$stmt_delete->execute();
@@ -53,9 +49,6 @@ if(!$_SESSION['user_email'])
 	if(isset($_GET['update_id']))
 	{
 		
-		
-		
-	
 		$stmt_delete = $DB_con->prepare('update orderdetails set order_status="Ordered" WHERE order_status="Pending" and user_id =:user_id');
 		$stmt_delete->bindParam(':user_id',$_GET['update_id']);
 		$stmt_delete->execute();

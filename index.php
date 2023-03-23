@@ -156,9 +156,9 @@ session_start();
       <div class="row text-center">
         <div class="col-lg-8 col-lg-offset-2 col-md-8 col-sm-8 col-md-offset-2 col-sm-offset-2">
           <h1 data-scroll-reveal="enter from the bottom after 0.2s"  class="header-line">BEST SELLERS </h1>
-          <p data-scroll-reveal="enter from the bottom after 0.3s" >
+          <h4 data-scroll-reveal="enter from the bottom after 0.3s" >
             Get a bonquet of your loved ones today
-          </p>
+          </h4>
         </div>
       </div>
       <!--/.HEADER LINE END-->
@@ -430,8 +430,8 @@ session_start();
                    <fieldset>
 					
 						
-                            <div class="form-group">
-                                <input class="form-control" placeholder="Username" name="admin_username" type="text" required>
+              <div class="form-group">
+                  <input class="form-control" placeholder="Username" name="admin_username" type="text" required>
 							</div>
 							
 							<div class="form-group">
