@@ -271,6 +271,7 @@ session_start();
     <div class="container bg-danger">
       <div class="row">
         <h3 class="text-center">SHOP BY OCCASION</h3>
+        <span>Delete me</span>
         <p class="text-center">Get unlimited flower collections today from Infinity Petals today</p>
       </div>
 
