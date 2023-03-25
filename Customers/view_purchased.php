@@ -89,7 +89,7 @@ if(!$_SESSION['user_email'])
                      <li class="dropdown user-dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> <?php echo $user_email; ?><b class="caret"></b></a>
                         <ul class="dropdown-menu">
-                            <li><a data-toggle="modal" data-target="#setAccount"><i class="fa fa-gear"></i> Settings</a></li>
+                            <li><a data-toggle="modal"data-target ="#setAccount"><i class="fa fa-gear"></i> Settings</a></li>
                             <li class="divider"></li>
                             <li><a href="logout.php"><i class="fa fa-power-off"></i> Log Out</a></li>
                         </ul>
@@ -154,7 +154,7 @@ include("config.php");
 		echo "<br />";
 		echo '<div class="alert alert-default" style="background-color:#033c73;">
                        <p style="color:white;text-align:center;">
-                       &copy 2023 infinity petals| All Rights Reserved
+                       &copyrights 2023 infinity petals| All Rights Reserved
 
 						</p>
                         

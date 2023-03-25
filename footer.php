@@ -37,7 +37,7 @@
   <footer class="text-center text-white py-4" style="background-color: #2d3d5a; ">
 
     <div class="text-center p-3" style="padding-bottom: 2rem; padding-top: 2rem; color: white;">
-    &copy 2023 infinity Petals Ug| All Rights Reserved |Design by :
+    &copyrights 2023 infinity Petals Ug| All Rights Reserved |Design by :
       <a class="text-light" style="" href="#">Norman Dev</a>
     </div>
   </footer>
