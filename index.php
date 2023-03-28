@@ -182,7 +182,7 @@ session_start();
             <center>  <img class="img" src="assets/img/T128-2A.jpg" style="width:200px;height:200px;" />
               <h4>Bird Paradise</h4>
                 <hr />
-                  <h5 class="">Ush.50,000</h5>
+                  <h5 class="">Ush.40000</h5>
                 <hr />
             </center>
               <a class="btn btn-info btn-set pr-4" href="./customers/add_to_cart.php" >Add to cart</a>
@@ -206,7 +206,7 @@ session_start();
             <center>  <img class="img" src="assets/img/Tnx2.jpg" style="width:200px;height:200px;" />
               <h4>Bird Paradise</h4>
                 <hr />
-                  <h5 class="">Ush.50,000</h5>
+                  <h5 class="">Ush.20,000</h5>
                 <hr />
             </center>
               <a class="btn btn-info btn-set pr-4" href="" >Add to cart</a>
@@ -220,7 +220,7 @@ session_start();
             <center>  <img class="img" src="assets/img/sun.jpg" style="width:200px;height:200px;" />
               <h4>Bird Paradise</h4>
                 <hr />
-                  <h5 class="">Ush.50,000</h5>
+                  <h5 class="">Ush.60,000</h5>
                 <hr />
             </center>
               <a class="btn btn-info btn-set pr-4" href="" >Add to cart</a>
