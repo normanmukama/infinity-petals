@@ -56,7 +56,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     // $result = mysqli_query($dbcon, $sql);
 
     $sql = "SELECT item_id, item_name, item_price, item_image FROM items";
-    echo $sql;
+    // echo $sql;
     $result = mysqli_query($dbcon, $sql);
 
 if (!$result) {
@@ -64,12 +64,12 @@ if (!$result) {
 }
 
 
-    while ($row = mysqli_fetch_assoc($result)) {
-        echo '<label>' . $row['item_name'] . ' ($' . $row['item_price'] .$row['item_image']. ')</label>';
-        echo '<input type="number" name="quantity" value="1" min="1">';
-        echo '<input type="hidden" name="product_id" value="' . $row['item_id'] . '">';
-        echo '<button type="submit">Add to Cart</button>';
-    }
+    // while ($row = mysqli_fetch_assoc($result)) {
+    //     echo '<label>' . $row['item_name'] . ' ($' . $row['item_price'] .$row['item_image']. ')</label>';
+    //     echo '<input type="number" name="quantity" value="1" min="1">';
+    //     echo '<input type="hidden" name="product_id" value="' . $row['item_id'] . '">';
+    //     echo '<button type="submit">Add to Cart</button>';
+    // }
     ?>
 </form>
 
@@ -112,7 +112,10 @@ if (!$result) {
             while ($row = mysqli_fetch_assoc($result)) {
                 echo '<div class="col-md-4 mb-4">';
                 echo '<div class="card">';
-                echo '<img src="' . $row['item_image'] . '" class="card-img-top" alt="' . $row['item_name'] . '">';
+                echo  " <a class='fancybox-buttons' href='../Admin/item_images/".$row['item_image']."' data-fancybox-group='button' title='Page "."- ".$row['item_name']."'>
+                          <img src='../Admin/item_images/".$row['item_image']."' class='img img-thumbnail' style='width:300px;height:300px;' />
+                        </a>";
+
                 echo '<div class="card-body">';
                 echo '<h5 class="card-title">' . $row['item_name'] . '</h5>';
                 echo '<p class="card-text">$' . $row['item_price'] . '</p>';

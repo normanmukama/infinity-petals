@@ -166,7 +166,7 @@ session_start();
 
       <div class="row" >
         <div  class="col-lg-3  col-md-3 col-sm-3" data-scroll-reveal="enter from the bottom after 0.4s">
-          <a href="shop2.php">
+          <a href="./Customers/shop3.php">
               <div class="about-div">
                 <center>  <img class="img" src="assets/img/sun.jpg" style="width:200px;height:200px;" />
                   <h4>Bird Paradise</h4>
