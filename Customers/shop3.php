@@ -122,7 +122,8 @@ if (!$result) {
                 echo '<form method="post">';
                 echo '<input type="number" name="quantity" value="1" min="1" class="form-control mb-2">';
                 echo '<input type="hidden" name="product_id" value="' . $row['item_id'] . '">';
-                echo '<button type="submit" class="btn btn-primary">Add to Cart</button>';
+                // echo '<a type="submit" class="btn btn-primary">Add to Cart</a>';
+                echo "<a class='btn btn-primary' href='add_to_cart2.php?cart=".$row['item_id']."'><span class='glyphicon glyphicon-shopping-cart'></span> Add to cart</a>";
                 echo '</form>';
                 echo '</div>';
                 echo '</div>';
