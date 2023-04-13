@@ -99,6 +99,9 @@ if (!$result) {
 </head>
 <body>
     <div class="container mt-5">
+        <button class="btn btn-info text-light">
+            <a href="save_order2.php">View Cart</a>
+        </button>
         <div class="row">
             <?php
             // Query the database to retrieve the product information and populate the form
@@ -123,7 +126,7 @@ if (!$result) {
                 echo '<input type="number" name="quantity" value="1" min="1" class="form-control mb-2">';
                 echo '<input type="hidden" name="product_id" value="' . $row['item_id'] . '">';
                 // echo '<a type="submit" class="btn btn-primary">Add to Cart</a>';
-                echo "<a class='btn btn-primary' href='add_to_cart2.php?cart=".$row['item_id']."'><span class='glyphicon glyphicon-shopping-cart'></span> Add to cart</a>";
+                echo "<a class='btn btn-primary' href='add_to_cart3.php?cart=".$row['item_id']."'><span class='glyphicon glyphicon-shopping-cart'></span> Add to cart</a>";
                 echo '</form>';
                 echo '</div>';
                 echo '</div>';
