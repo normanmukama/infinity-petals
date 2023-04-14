@@ -12,24 +12,26 @@ session_start();
 		$edit_row = $stmt_edit->fetch(PDO::FETCH_ASSOC);
 		extract($edit_row);
 
-        // Save the item to the user's shopping cart in their session
-        $_SESSION['cart'][] = array(
-            'image' => $item_image,
+        // $_SESSION['cart'][$product_id] = array(
+        //     'name' => $product_name,
+        //     'price' => $product_price,
+        //     'quantity' => 1
+        //   );
+
+
+          $_SESSION['cart'][] = array(
+            'image' =>$item_image,
+            'id' => $item_id,
             'name' => $item_name,
-            'price' => $item_price
-        );
-
-
-        $_SESSION['cart'][$product_id] = array(
-            'product_id' => $product_id,
-            'name' => $row['item_name'],
-            'price' => $row['item_price'],
-            'image' => $row['item_image'],
-            'quantity' => $quantity
+            'price' => $item_price,
+            'quantity' => 1
+            
         );
 	}
 	else
 	{
+
+
 		header("Location: shop3.php");
 	}
 ?>
