@@ -17,7 +17,7 @@ $order_status='Pending';
 $save_order_details="insert into orderdetails (user_id,order_name,order_price,order_quantity,order_total,order_status,order_date) VALUE ('$user_id','$order_name','$order_price','$order_quantity','$order_total','$order_status',CURDATE())";
 mysqli_query($dbcon,$save_order_details);
 echo "<script>alert('Item successfully added to cart!')</script>";				
-echo "<script>window.open('shop3.php?id=1','_self')</script>";
+echo "<script>window.open('shop.php?id=1','_self')</script>";
 
 
 				
