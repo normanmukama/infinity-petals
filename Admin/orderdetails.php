@@ -15,19 +15,13 @@ if(!$_SESSION['admin_username'])
 	
 	if(isset($_GET['delete_id']))
 	{
-		
-		
-		
-	
 		$stmt_delete = $DB_con->prepare('DELETE FROM orderdetails WHERE order_id =:order_id');
 		$stmt_delete->bindParam(':order_id',$_GET['delete_id']);
 		$stmt_delete->execute();
 		
 		header("Location: orderdetails.php");
 	}
-
 ?>
-
 
 
 <!DOCTYPE html>
@@ -40,13 +34,8 @@ if(!$_SESSION['admin_username'])
     <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css" />
     <link rel="stylesheet" type="text/css" href="css/local.css" />
-
-   
     <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
 	<script src="js/datatables.min.js"></script>
-
-   
-    
 </head>
 <body>
     <div id="wrapper">
@@ -176,7 +165,6 @@ include("config.php");
 	else
 	{
 		?>
-		
 			
         <div class="col-xs-12">
         	<div class="alert alert-warning">
@@ -186,22 +174,14 @@ include("config.php");
         <?php
 	}
 	
-?>
-		
+?>	
 	</div>
 	</div>
 					
             
                 </div>
-            </div>
-
-           
-
-           
-        </div>
-		
-		
-		
+            </div> 
+        </div>	
     </div>
     <!-- /#wrapper -->
 

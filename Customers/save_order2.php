@@ -27,7 +27,7 @@ if (isset($_SESSION['cart']) && !empty($_SESSION['cart'])) {
         // Add a quantity input field and a submit button
         $table_rows .= "<tr>
             <td>
-                <a class='fancybox-buttons' href='../Admin/item_images/".$item['image']."' data-fancybox-group='button' title='Page "."'>
+                <a class='fancybox-buttons' data-fancybox-group='button' title='Page "."'>
                     <img src='../Admin/item_images/".$item['image']."' class='img img-thumbnail' style='width:50px;height:50px;' />
                 </a>
             </td>
