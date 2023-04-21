@@ -18,13 +18,13 @@ if (isset($_SESSION['cart']) && !empty($_SESSION['cart'])) {
     $cart = $_SESSION['cart']; // get the cart from session
     $total = 0;
     $table_rows = '';
-    
+
     // loop through each item in the cart and display its details
     foreach ($cart as $product_id => $item) {
         $sub_total = $item['quantity'] * $item['price'];
         $total += $sub_total;
-        
-        // Add a quantity input field and a submit button
+
+        // Add a quantity input field and an ID to the form
         $table_rows .= "<tr>
             <td>
                 <a class='fancybox-buttons' data-fancybox-group='button' title='Page "."'>
@@ -33,23 +33,22 @@ if (isset($_SESSION['cart']) && !empty($_SESSION['cart'])) {
             </td>
             <td>" . $item['name'] . "</td>
             <td>
-                <form action='update_item.php' method='POST'>
+                <form action='update_quantity.php' method='POST' class='update-quantity-form'>
                     <input type='hidden' name='product_id' value='" . $product_id . "'>
-                    <input type='number' name='quantity' value='" . $item['quantity'] . "' min='1'>
-                    <button type='submit' class='btn btn-primary'>Update</button>
+                    <input type='number' name='quantity' id='quantity-" . $product_id . "' value='" . $item['quantity'] . "' min='1'>
                 </form>
             </td>
-            <td>" . $item['price'] . "</td>
-            <td>" . $sub_total . "</td>
+            <td class='price'>" . $item['price'] . "</td>
+            <td class='sub-total'>" . $sub_total . "</td>
             <td>
-                <form action='delete_item.php' method='POST'>
+                <form action='remove_item.php' method='POST'>
                     <input type='hidden' name='product_id' value='" . $product_id . "'>
                     <button type='submit' class='btn btn-danger'>Delete</button>
                 </form>
             </td>
         </tr>";
     }
-    
+
     // Display the updated cart table and total
     echo "<table class='table'>
         <thead>
@@ -77,22 +76,19 @@ if (isset($_SESSION['cart']) && !empty($_SESSION['cart'])) {
                     <tbody>
                         <tr>
                             <td>Sub Total:</td>
-                            <td>$total</td>
+                            <td><span class='total-sub'>$total</span></td>
                         </tr>
                         <tr>
                             <td>Total:</td>
-                            <td>$total</td>
+                            <td><span class='total'>$total</span></td>
                         </tr>
                     </tbody>
                 </table>
             </div>
         </div>
     </div>";
-} else {
-    echo '<h2>Your cart is empty</h2>';
 }
 ?>
-
 </div>
 </body>
 </html>
