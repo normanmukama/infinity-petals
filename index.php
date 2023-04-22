@@ -314,6 +314,9 @@ session_start();
           </div>
         </div>
       </div>
+      <div class="row">
+       
+      </div>
     </div>
     <!-- shop by occasion ends -->
     <div id="course-sec" class="container set-pad">
