@@ -39,71 +39,7 @@
   </div>
 </nav>
 
- <!--- category--->
- <!-- <h1>Categories</h1> -->
-    <!-- <main class="all">
-        <div class="slide-container">
-            <i class="fas fa-angle-left" id="slide-left"></i>
-
-            <section class="main" id="slider">
-
-                <div class="folder">
-                  <div class="font">
-                    <img src="images/medicine.jpeg" alt="" height="200px" width="200px">
-                    <div class="product-detail">
-                        <h2>Demo Product</h2>
-                    </div>
-                  </div>
-                </div>
-                <div class="folder">
-                    <img src="images/medicine.jpeg" alt="" height="200px" width="200px">
-                    <div class="product-detail">
-                        <h2>Demo Product</h2>
-                    </div>
-                </div>
-                <div class="folder">
-                    <img src="images/medicine.jpeg" alt="" height="200px" width="200px">
-                    <div class="product-detail">
-                        <h2>Demo Product</h2>
-                    </div>
-                </div>
-                <div class="folder">
-                    <img src="images/medicine.jpeg" alt="" height="200px" width="200px">
-                    <div class="product-detail">
-                        <h2>Demo Product</h2>
-                    </div>
-                </div>
-                <div class="folder">
-                    <img src="images/medicine.jpeg" alt="" height="200px" width="200px">
-                    <div class="product-detail">
-                        <h2>Demo Product</h2>
-                    </div>
-                </div>
-                <div class="folder">
-                    <img src="images/medicine.jpeg" alt="" height="200px" width="200px">
-                    <div class="product-detail">
-                        <h2>Demo Product</h2>
-                    </div>
-                </div>
-                <div class="folder">
-                    <img src="images/medicine.jpeg" alt="" height="200px" width="200px">
-                    <div class="product-detail">
-                        <h2>Demo Product</h2>
-                    </div>
-                </div>
-                <div class="folder">
-                    <img src="images/medicine.jpeg" alt="" height="200px" width="200px">
-                    <div class="product-detail">
-                        <h2>Demo Product</h2>
-                    </div>
-                </div>
-                
-
-            </section>
-
-            <i class="fas fa-angle-right" id="slide-right"></i>
-        </div>
-    </main> -->
+ 
 
  <div class="container">
 

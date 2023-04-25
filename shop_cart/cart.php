@@ -57,12 +57,12 @@ session_start();
           <table class="table table-bordered table-striped text-center">
             <thead>
               <tr>
-              <td colspan='7'>
+              <td colspan='6'>
                 <h4 class="text-center text-info m-0"> Products in your cart!</h4>
               </td>
             </tr>
             <tr>
-              <th>ID</th>
+              <!-- <th>ID</th> -->
               <th>Image</th>
               <th>Product</th>
               <th>Price</th>
@@ -85,11 +85,12 @@ session_start();
               while($row = $result->fetch_assoc()):
               ?>
               <tr>
-                <td><?= $row['id'] ?></td>
-
+                <!-- <td><?= $row['id'] ?></td> -->
                 <input type="hidden" class="pid" value="<?= $row['id'] ?>">
+                <td>
+                <img src="images/<?= $row['product_image'] ?>" class="card-img-top" style="height:50px;width:50px;">
+                </td>
 
-                <td><img src="<?= $row['product_image'] ?>" width="50"></td>
                 <td><?= $row['product_name'] ?></td>
                 <td><span>Ugshs</span>&nbsp;<?= number_format($row['product_price'],2) ?>/-</td>
 
@@ -110,7 +111,7 @@ session_start();
               <?php $grand_total += $row['total_price']; ?> 
               <?php endwhile; ?>
               <tr>
-                <td colspan="3">
+                <td colspan="2">
                   <a href="index.php" class="btn btn-success"><i class="fas fa-cart-plus"></i>
                   &nbsp;&nbsp;Continue Shopping</a>
                 </td>
