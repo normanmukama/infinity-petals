@@ -8,6 +8,22 @@ if(!$_SESSION['admin_username'])
 }
 
 ?>
+
+<?php
+
+	require_once 'config.php';
+	
+	if(isset($_GET['delete_id']))
+	{
+		$stmt_delete = $DB_con->prepare('DELETE FROM orderdetails WHERE order_id =:order_id');
+		$stmt_delete->bindParam(':order_id',$_GET['delete_id']);
+		$stmt_delete->execute();
+		
+		header("Location: orderdetails.php");
+	}
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,12 +34,8 @@ if(!$_SESSION['admin_username'])
     <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css" />
     <link rel="stylesheet" type="text/css" href="css/local.css" />
-
-    <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
     <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
-
-   
-    
+	<script src="js/datatables.min.js"></script>
 </head>
 <body>
     <div id="wrapper">
@@ -39,12 +51,11 @@ if(!$_SESSION['admin_username'])
             </div>
             <div class="collapse navbar-collapse navbar-ex1-collapse">
                 <ul class="nav navbar-nav side-nav">
-                    <li class="active"><a href="index.php"> &nbsp; &nbsp; &nbsp; Home</a></li>
+                    <li><a href="index.php"> &nbsp; &nbsp; &nbsp; Home</a></li>
 					<li><a data-toggle="modal" data-target="#uploadModal"> &nbsp; &nbsp; &nbsp; Upload Items</a></li>
 					<li><a href="items.php"> &nbsp; &nbsp; &nbsp; Item Management</a></li>
 					<li><a href="customers.php"> &nbsp; &nbsp; &nbsp; Customer Management</a></li>
-					<li><a href="orderdetails.php"> &nbsp; &nbsp; &nbsp; Order Details</a></li>
-					<li><a href="rand_order2.php"> &nbsp; &nbsp; &nbsp; Random Orders</a></li>
+					<li class="active"><a href="orderdetails.php"> &nbsp; &nbsp; &nbsp; Order Details</a></li>
 					<li><a href="logout.php"> &nbsp; &nbsp; &nbsp; Logout</a></li>
 					
                     
@@ -75,121 +86,59 @@ if(!$_SESSION['admin_username'])
 			
 			
 			
-			<div id="my-carousel" class="carousel slide hero-slide hidden-xs" data-ride="carousel">
-    <!-- Indicators -->
-    <ol class="carousel-indicators">
-        <li data-target="#my-carousel" data-slide-to="0" class="active"></li>
-        <li data-target="#my-carousel" data-slide-to="1"></li>
-        <li data-target="#my-carousel" data-slide-to="2"></li>
-		<li data-target="#my-carousel" data-slide-to="3"></li>
-        <li data-target="#my-carousel" data-slide-to="4"></li>
-		<li data-target="#my-carousel" data-slide-to="5"></li>
-    </ol>
-
-    <!-- Wrapper for slides -->
-    <div class="carousel-inner" role="listbox">
-        <div class="item active">
 		
-            <img src="../assets/img/1-slide.jpg" alt="Hero Slide" style="width:100%;height:500px;">
-
-            <div class="carousel-caption">
-                <h1 style="font-family:Century Gothic"><b></b></h1>
-
-                <h2></h2>
-            </div>
-        </div>
-        <div class="item">
-            <img src="../assets/img/2-slide.jpg" alt="..." style="width:100%;height:500px;">
-
-            <div class="carousel-caption">
-               
-            </div>
-        </div>
-        <div class="item">
-            <img src="../assets/img/3-slide.jpg" alt="..." style="width:100%;height:500px;">
-
-            <div class="carousel-caption">
-		
-
-                <p></p>
-            </div>
-        </div>
-		
-		<div class="item">
-            <img src="../assets/img/4-slide.jpg" alt="..." style="width:100%;height:500px;">
-
-            <div class="carousel-caption">
-		
-
-                <p></p>
-            </div>
-        </div>
-		
-		<div class="item">
-            <img src="../assets/img/5-slide.jpg" alt="..." style="width:100%;height:500px;">
-
-            <div class="carousel-caption">
-		
-
-                <p></p>
-            </div>
-        </div>
-		
-		<div class="item">
-            <img src="../assets/img/6-slide.jpg" alt="..." style="width:100%;height:500px;">
-
-            <div class="carousel-caption">
-		
-
-                <p></p>
-            </div>
-        </div>
-    </div>
-
-    <!-- Controls -->
-    <a class="left carousel-control" href="#my-carousel" role="button" data-slide="prev">
+			
+			
+		 <div class="alert alert-danger">
+                        
+                          <center> <h3><strong>Order Details Management</strong> </h3></center>
+						  
+						  </div>
+						  
+						  <br />
+						  
+						  <div class="table-responsive">
+            <table class="display table table-bordered" id="example" cellspacing="0" width="100%">
+              <thead>
+              <tr>
+                <th>Name</th>
+                    <th>Email</th>
+                    <th>Contact</th>
+                    <th>Address</th>
+                    <th>Amt to pay</th>
+                    <th>Products</th>
+                </tr>
+              </thead>
+              <tbody>
+			  <?php
+    
+   
+    include '../shop_cart/config.php';
+    $stmt = $conn->prepare('select * from rand_orders');
+    $stmt->execute();
+    $result = $stmt->get_result();
+    ?>
 	
-      <span class="icon-prev"></span>
-       
-    </a>
-    <a class="right carousel-control" href="#my-carousel" role="button" data-slide="next">
-       
-       <span class="icon-next"></span>
-    </a>
-
-<!-- #my-carousel-->
-			
-			</div>
-			
-			
-		<br />	
-			 <div class="alert alert-danger">
-                        
-                        &nbsp; &nbsp; Welcome to EDGE Skateshop! So, if you're looking for an Element skateboard, why not visit the EDGE Skateshop? 
-						It's that easy. If you have a favorite skate brand, 
-						this is the easiest and most straightforward way to get it.A lot of skate brands who are well known for one thing, 
-						like decks, also sell completes with 
-						their own special wheels, along with other brands for things like trucks, bearings, etc.
-                    </div>
-					<br />
-			
-			<div class="alert alert-default" style="background-color:#033c73;">
-                       <h4 style="color:white;text-align:center;">
-                         &copy 2023 Infinity Petals| All Rights Reserved |
-                       </h4>
-                        
-                    </div>
+	
+    <?php while($row = $result->fetch_assoc()): ?>
+        <tr>
+            <td><?php echo $row['name']; ?></td>
+            <td><?php echo $row['email']; ?></td>
+            <td><?php echo $row['phone']; ?></td>
+            <td><?php echo $row['address']; ?></td>
+            <td><?php echo $row['amount_paid']; ?></td>
+            <td><?php echo $row['products']; ?></td>
+        </tr>
+    <?php endwhile; ?>
+	
+?>	
+	</div>
+	</div>
+					
             
                 </div>
-            </div>
-
-           
-
-           
-        </div>
-		
-		
-		
+            </div> 
+        </div>	
     </div>
     <!-- /#wrapper -->
 
@@ -218,12 +167,6 @@ if(!$_SESSION['admin_username'])
                            
 							 
 							</div>
-							
-							
-							
-							
-							
-							
 							
 							
 							<p>Price:</p>
@@ -260,6 +203,11 @@ if(!$_SESSION['admin_username'])
             </div>
           </div>
         </div>
+		<script type="text/javascript" charset="utf-8">
+	$(document).ready(function() {
+	  $('#example').dataTable();
+	});
+    </script>
 	  	  <script>
    
     $(document).ready(function() {
