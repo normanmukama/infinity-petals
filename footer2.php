@@ -1,4 +1,4 @@
-<!-- 
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -10,7 +10,7 @@
         <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
         <link rel="stylesheet" href="bootstrap/css/bootstrap-reboot.min.css">
     </head>
-    <body> -->
+    <body>
         <div class="container">
             <div class="row">
                 <div class="col-md-4" style="margin-bottom: 2rem;"  data-scroll-reveal="enter from the bottom after 0.4s">

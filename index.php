@@ -1,6 +1,7 @@
 ﻿<?php
+
 session_start();
-//  include 'header.php';
+ include 'header.php';
 ?>
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -174,12 +175,13 @@ session_start();
                       <h5 class="">Ush.50,000</h5>
                     <hr />
                 </center>
-                  <a class="btn btn-info btn-set pr-4" href="" >Add to cart</a>
+                  <a class="btn btn-info btn-set pr-4" href="./shop_cart/index.php" >Add to cart</a>
               </div>
           </a>
         </div>
         
         <div class="col-lg-3  col-md-3 col-sm-3" data-scroll-reveal="enter from the bottom after 0.4s">
+          <a href="./shop_cart/index.php">
           <div class="about-div">
             <center>  <img class="img" src="assets/img/T128-2A.jpg" style="width:200px;height:200px;" />
               <h4>Bird Paradise</h4>
@@ -187,11 +189,13 @@ session_start();
                   <h5 class="">Ush.40000</h5>
                 <hr />
             </center>
-              <a class="btn btn-info btn-set pr-4" href="./customers/add_to_cart.php" >Add to cart</a>
+              <a class="btn btn-info btn-set pr-4" href="./shop_cart/index.php" >Add to cart</a>
           </div>
+          </a>
         </div>
 
         <div class="col-lg-3  col-md-3 col-sm-3" data-scroll-reveal="enter from the bottom after 0.4s">
+          <a href="./shop_cart/index.php">
           <div class="about-div">
             <center>  <img class="img" src="assets/img/R&L.jpg" style="width:200px;height:200px;" />
               <h4>Bird Paradise</h4>
@@ -199,11 +203,13 @@ session_start();
                   <h5 class="">Ush.50,000</h5>
                 <hr />
             </center>
-              <a class="btn btn-info btn-set pr-4" href="" >Add to cart</a>
+              <a class="btn btn-info btn-set pr-4" href="./shop_cart/index.php">Add to cart</a>
           </div>
+          </a>
         </div>
 
         <div class="col-lg-3  col-md-3 col-sm-3" data-scroll-reveal="enter from the bottom after 0.4s">
+          <a href="./shop_cart/index.php">
           <div class="about-div">
             <center>  <img class="img" src="assets/img/Tnx2.jpg" style="width:200px;height:200px;" />
               <h4>Bird Paradise</h4>
@@ -211,37 +217,43 @@ session_start();
                   <h5 class="">Ush.20,000</h5>
                 <hr />
             </center>
-              <a class="btn btn-info btn-set pr-4" href="" >Add to cart</a>
+              <a class="btn btn-info btn-set pr-4" href="./shop_cart/index.php" >Add to cart</a>
           </div>
+          </a>
         </div>
       </div>
 
       <div class="row" >
-        <div class="col-lg-3  col-md-3 col-sm-3" data-scroll-reveal="enter from the bottom after 0.4s">
-          <div class="about-div">
-            <center>  <img class="img" src="assets/img/sun.jpg" style="width:200px;height:200px;" />
-              <h4>Bird Paradise</h4>
-                <hr />
-                  <h5 class="">Ush.60,000</h5>
-                <hr />
-            </center>
-              <a class="btn btn-info btn-set pr-4" href="" >Add to cart</a>
-          </div>
+        <div  class="col-lg-3  col-md-3 col-sm-3" data-scroll-reveal="enter from the bottom after 0.4s">
+          <a href="./shop_cart/index.php">
+              <div class="about-div">
+                <center>  <img class="img" src="assets/img/sun.jpg" style="width:200px;height:200px;" />
+                  <h4>Bird Paradise</h4>
+                    <hr />
+                      <h5 class="">Ush.50,000</h5>
+                    <hr />
+                </center>
+                  <a class="btn btn-info btn-set pr-4" href="./shop_cart/index.php" >Add to cart</a>
+              </div>
+          </a>
         </div>
         
         <div class="col-lg-3  col-md-3 col-sm-3" data-scroll-reveal="enter from the bottom after 0.4s">
+          <a href="./shop_cart/index.php">
           <div class="about-div">
             <center>  <img class="img" src="assets/img/T128-2A.jpg" style="width:200px;height:200px;" />
               <h4>Bird Paradise</h4>
                 <hr />
-                  <h5 class="">Ush.50,000</h5>
+                  <h5 class="">Ush.40000</h5>
                 <hr />
             </center>
-              <a class="btn btn-info btn-set pr-4" href="" >Add to cart</a>
+              <a class="btn btn-info btn-set pr-4" href="./shop_cart/index.php" >Add to cart</a>
           </div>
+          </a>
         </div>
 
         <div class="col-lg-3  col-md-3 col-sm-3" data-scroll-reveal="enter from the bottom after 0.4s">
+          <a href="./shop_cart/index.php">
           <div class="about-div">
             <center>  <img class="img" src="assets/img/R&L.jpg" style="width:200px;height:200px;" />
               <h4>Bird Paradise</h4>
@@ -249,20 +261,23 @@ session_start();
                   <h5 class="">Ush.50,000</h5>
                 <hr />
             </center>
-              <a class="btn btn-info btn-set pr-4" href="" >Add to cart</a>
+              <a class="btn btn-info btn-set pr-4" href="./shop_cart/index.php">Add to cart</a>
           </div>
+          </a>
         </div>
 
         <div class="col-lg-3  col-md-3 col-sm-3" data-scroll-reveal="enter from the bottom after 0.4s">
+          <a href="./shop_cart/index.php">
           <div class="about-div">
             <center>  <img class="img" src="assets/img/Tnx2.jpg" style="width:200px;height:200px;" />
               <h4>Bird Paradise</h4>
                 <hr />
-                  <h5 class="">Ush.50,000</h5>
+                  <h5 class="">Ush.20,000</h5>
                 <hr />
             </center>
-              <a class="btn btn-info btn-set pr-4" href="" >Add to cart</a>
+              <a class="btn btn-info btn-set pr-4" href="./shop_cart/index.php" >Add to cart</a>
           </div>
+          </a>
         </div>
       </div>
 

@@ -12,8 +12,8 @@
 <body style="">
 
 <nav class="navbar-expand-md bg-dark navbar-dark"> 
-  Brand
-  <a class="navbar-brand" href="index.php"> <i class="fas fa-ambulance"></i>&nbsp;&nbsp;Medical campany</a>
+  
+  <a class="navbar-brand ml-2" href="index.php"> <i class="fas fa-ambulance"></i>&nbsp;&nbsp;Medical campany</a>
 
   <!-- Toggler/collapsibe Button -->
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
@@ -55,11 +55,11 @@
       <div class="col-sm-6 col-md-4 col-lg-3 mb-2">
           <div class="card-deck">
                 <div class="face">
-                    <img src="images/<?= $row['item_image'] ?>" class="card-img-top" height="200px">
+                    <img src="images/<?= $row['item_image'] ?>" class="card-img-top" height="180px">
                     <div class="card-body p-1">
-                        <h4 class=" text-center title"><?= $row['item_name']?></h4>
-                        <h5 class="title1 text-center"><span>Ugshs</span>&nbsp;
-                        <?= number_format($row['item_price'],2)?>/-</h5>
+                        <p class=" text-center title"><?= $row['item_name']?></p>
+                        <p class="title1 text-center"><span>Ugshs</span>&nbsp;
+                        <?= number_format($row['item_price'],2)?>/-</p>
                     </div>
                     <div>
                       <form action="" class="form-submit">
@@ -69,8 +69,8 @@
                         <input type="hidden" class="pimage" value="<?= $row['item_image'] ?>">
                         <input type="hidden" class="pcode" value="<?= $row['product_code'] ?>">
                         <div class="button"> 
-                          <button class="button1">Description</button>
-                         <button class="button1 addItemBtn"><i class="fas fa-cart-plus"></i>&nbsp;&nbsp;Add to cart</button>
+                          <!-- <button class="button1">Description</button> -->
+                         <button class="button1 px-4 addItemBtn"><i class="fas fa-cart-plus"></i>&nbsp;&nbsp;Add to cart</button>
                        </div>
                       </form>
                     </div>
@@ -80,7 +80,7 @@
         <?php endwhile; ?>
     </div>
  </div>
-
+<?php include '../footer2.php'; ?>
  <script src="java.js"></script>
  <!-- jQuery library -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
