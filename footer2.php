@@ -57,7 +57,6 @@
 
         <!--  Core Bootstrap Script -->
         <script src="js/bootstrap.min.js"></script>
-        <!--  Custom Scripts --> 
-            <!-- <script src="assets/js/custom.js"></script> -->
+        
     </body>
 </html>

@@ -41,48 +41,7 @@
     </div>
   </nav>  
 
-   <!-- --------------------------------------slider starts -------------------------------->
-   <!-- <div id="carouselId" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-            <li data-target="#carouselId" data-slide-to="0" class="active"></li>
-            <li data-target="#carouselId" data-slide-to="1"></li>
-            <li data-target="#carouselId" data-slide-to="2"></li>
-        </ol>
-        <div class="carousel-inner" role="listbox">
-            <div class="carousel-item active">
-
-                <img class="img-fluid" src="assets/img/laptop.jpg" alt="First slide">
-
-                <div class="carousel-caption d-none d-md-block">
-                    <h1 style="margin-top: -10rem;color:black;" class="">WELCOME TO KINONI HIGH SCHOOL WEBSITE</h1>
-                                   </div>
-            </div>
-            <div class="carousel-item ">
-                <img class="img-fluid" src="../IMAGES/slide2.jpg" alt="Second slide ">
-                <div class="carousel-caption d-none d-md-block">
-                    <h1 class="" style="margin-top: -10rem; color:black;">Download your holiday work</h1>
-                    <button class="btn btn-primary"><a class="text-light" href="holidaywork.php">Download</a></button>
-                </div>
-            </div>
-            <div class="carousel-item ">
-                <img class="img-fluid" src="../IMAGES/slide3.jpg" alt="Second slide ">
-                <div class="carousel-caption d-none d-md-block ">
-                    <h1 class="" data-aos="zoom-in"  style="margin-top: -10rem;color:black;">Apply now and join one of our compass</h1>
-                    <button class="btn btn-primary"><a class="text-light" href="application.php">Get Admitted</a></button>
-                </div>
-            </div>
-
-        </div>
-        <a class="carousel-control-prev " href="#carouselId " role="button " data-slide="prev ">
-            <span class="carousel-control-prev-icon " aria-hidden="true "></span>
-            <span class="sr-only ">Previous</span>
-        </a>
-        <a class="carousel-control-next " href="#carouselId " role="button " data-slide="next ">
-            <span class="carousel-control-next-icon " aria-hidden="true "></span>
-            <span class="sr-only ">Next</span>
-        </a>
-    </div> -->
-    <!-- --------------------------------slider ends------------------------------------ -->
+   
    
     <!-- Background image -->
       <div

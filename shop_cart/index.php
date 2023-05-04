@@ -80,6 +80,8 @@
         <?php endwhile; ?>
     </div>
  </div>
+ <!-- adding the footer -->
+ 
 <?php include '../footer2.php'; ?>
  <script src="java.js"></script>
  <!-- jQuery library -->
