@@ -90,7 +90,7 @@ if(!$_SESSION['admin_username'])
     <div class="carousel-inner" role="listbox">
         <div class="item active">
 		
-            <img src="../assets/img/1-slide.jpg" alt="Hero Slide" style="width:100%;height:500px;">
+            <img src="../assets/img/7.jpg" alt="Hero Slide" style="width:100%;height:500px;">
 
             <div class="carousel-caption">
                 <h1 style="font-family:Century Gothic"><b></b></h1>
@@ -99,14 +99,14 @@ if(!$_SESSION['admin_username'])
             </div>
         </div>
         <div class="item">
-            <img src="../assets/img/2-slide.jpg" alt="..." style="width:100%;height:500px;">
+            <img src="../assets/img/1.jpg" alt="..." style="width:100%;height:500px;">
 
             <div class="carousel-caption">
                
             </div>
         </div>
         <div class="item">
-            <img src="../assets/img/3-slide.jpg" alt="..." style="width:100%;height:500px;">
+            <img src="../assets/img/2.jpg" alt="..." style="width:100%;height:500px;">
 
             <div class="carousel-caption">
 		
@@ -116,7 +116,7 @@ if(!$_SESSION['admin_username'])
         </div>
 		
 		<div class="item">
-            <img src="../assets/img/4-slide.jpg" alt="..." style="width:100%;height:500px;">
+            <img src="../assets/img/5.jpg" alt="..." style="width:100%;height:500px;">
 
             <div class="carousel-caption">
 		
@@ -126,7 +126,7 @@ if(!$_SESSION['admin_username'])
         </div>
 		
 		<div class="item">
-            <img src="../assets/img/5-slide.jpg" alt="..." style="width:100%;height:500px;">
+            <img src="../assets/img/7.jpg" alt="..." style="width:100%;height:500px;">
 
             <div class="carousel-caption">
 		
@@ -136,7 +136,7 @@ if(!$_SESSION['admin_username'])
         </div>
 		
 		<div class="item">
-            <img src="../assets/img/6-slide.jpg" alt="..." style="width:100%;height:500px;">
+            <img src="../assets/img/5.jpg" alt="..." style="width:100%;height:500px;">
 
             <div class="carousel-caption">
 		
@@ -165,11 +165,8 @@ if(!$_SESSION['admin_username'])
 		<br />	
 			 <div class="alert alert-danger">
                         
-                        &nbsp; &nbsp; Welcome to EDGE Skateshop! So, if you're looking for an Element skateboard, why not visit the EDGE Skateshop? 
-						It's that easy. If you have a favorite skate brand, 
-						this is the easiest and most straightforward way to get it.A lot of skate brands who are well known for one thing, 
-						like decks, also sell completes with 
-						their own special wheels, along with other brands for things like trucks, bearings, etc.
+                        &nbsp; &nbsp; <h1>This is infinity petals admin dashboard</h1>
+						
                     </div>
 					<br />
 			

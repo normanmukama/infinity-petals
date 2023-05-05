@@ -410,28 +410,21 @@ session_start();
             
 				
 				 <form role="form" method="post" action="userlogin.php">
-                   <fieldset>
-					
-						
-                            <div class="form-group">
-                                <input class="form-control" placeholder="Email" name="user_email" type="email" required>
+            <fieldset>
+              <div class="form-group">
+                <input class="form-control" placeholder="Email" name="user_email" type="email" required>
 							</div>
 							
 							<div class="form-group">
-                                <input class="form-control" placeholder="Password" name="user_password" type="password" required>
+                <input class="form-control" placeholder="Password" name="user_password" type="password" required>
 							</div>
-				   
-					 </fieldset>
-                  
-            
-              </div>
+					  </fieldset>
+
+            </div>
               <div class="modal-footer">
-               
                 <button class="btn btn-md btn-warning btn-block" name="user_login">Sign In</button>
-				
-				 <button type="button" class="btn btn-md btn-success btn-block" data-dismiss="modal">Cancel</button>
-				   </form>
-				   
+				    <button type="button" class="btn btn-md btn-success btn-block" data-dismiss="modal">Cancel</button>
+				  </form>
               </div>
             </div>
           </div>

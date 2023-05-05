@@ -85,7 +85,7 @@ $allItems = implode(", ",$items);
                     <input type="tel" name="phone" class="form-control" placeholder="Enter Phone number" Required>
                 </div>
                 <div class="form-group">
-                    <textarea name="address" class="form-control" rows="3" cols="10" placeholder="Enter Delivery Address Here..." required></textarea>
+                    <textarea name="address" class="form-control" rows="3" cols="10" placeholder="Enter Delivery Address (And some additional information(optional))" required></textarea>
                 </div>
                 <h6 class="text-center lead">Select Payment Mode</h6>
                 <div class="form-group">

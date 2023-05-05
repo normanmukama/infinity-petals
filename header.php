@@ -29,7 +29,7 @@
           <a class="nav-link" href="#">Features</a>
         </li> -->
         <li class="nav-item">
-          <a class="nav-link" href="#">shop now</a>
+          <a class="nav-link" href="./shop_cart/index.php">shop now</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">About</a>
