@@ -13,14 +13,22 @@ if(!$_SESSION['admin_username'])
 
 	require_once 'config.php';
 	
-	if(isset($_GET['delete_id']))
-	{
-		$stmt_delete = $DB_con->prepare('DELETE FROM orderdetails WHERE order_id =:order_id');
-		$stmt_delete->bindParam(':order_id',$_GET['delete_id']);
-		$stmt_delete->execute();
+	// if(isset($_GET['delete_id']))
+	// {
+	// 	$stmt_delete = $DB_con->prepare('DELETE FROM orderdetails WHERE order_id =:order_id');
+	// 	$stmt_delete->bindParam(':order_id',$_GET['delete_id']);
+	// 	$stmt_delete->execute();
 		
-		header("Location: orderdetails.php");
-	}
+	// 	header("Location: orderdetails.php");
+	// }
+    if(isset($_GET['delete_item'])){
+        $item_id =  mysqli_real_escape_string($conn, $_GET['delete_item']);
+        $query = "DELETE  from rand_orders WHERE id = '$item_id' ";
+        $mysqli_query = mysqli_query($conn, $query);
+        if($mysqli_query){
+            header('Location: rand_order2.php');
+        }
+    }
 ?>
 
 
@@ -100,13 +108,15 @@ if(!$_SESSION['admin_username'])
 						  <div class="table-responsive">
             <table class="display table table-bordered" id="example" cellspacing="0" width="100%">
               <thead>
-              <tr>
-                <th>Name</th>
+                <tr>
+                    <th>Date</th>
+                    <th>Name</th>
                     <th>Email</th>
                     <th>Contact</th>
                     <th>Address</th>
                     <th>Amt to pay</th>
                     <th>Products</th>
+                    <th>Action</th>
                 </tr>
               </thead>
               <tbody>
@@ -122,16 +132,22 @@ if(!$_SESSION['admin_username'])
 	
     <?php while($row = $result->fetch_assoc()): ?>
         <tr>
+            <td><?php echo $row['reg_date']; ?></td>
             <td><?php echo $row['name']; ?></td>
             <td><?php echo $row['email']; ?></td>
             <td><?php echo $row['phone']; ?></td>
             <td><?php echo $row['address']; ?></td>
             <td><?php echo $row['amount_paid']; ?></td>
             <td><?php echo $row['products']; ?></td>
+            <td>
+                <form action="rand_order2.php" method="GET">
+                    <button class="btn btn-danger" submit="submit" name="delete_item" value= <?= $row['id']; ?>>DEL</button>
+                </form>
+            </td>
         </tr>
     <?php endwhile; ?>
 	
-?>	
+	
 	</div>
 	</div>
 					

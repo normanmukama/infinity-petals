@@ -12,4 +12,6 @@
 	catch(PDOException $e){
 		echo $e->getMessage();
 	}
+
+	$conn = mysqli_connect("localhost", "root","adminnorman","edgedata");
 	
