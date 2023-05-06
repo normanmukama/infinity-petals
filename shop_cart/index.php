@@ -7,13 +7,13 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <link rel="stylesheet" href="style.css">
-    <title>Shopping Cart system</title>
+    <title>Infinity petalsug</title>
 </head>
-<body style="">
+<body style="background-color:;" class="">
 
-<nav class="navbar-expand-md bg-dark navbar-dark"> 
+<nav class="navbar-expand-md navbar bg-primary navbar-dark" style="position: fixed; margin-top:-.5rem; z-index:1000; width:100%;"> 
   
-  <a class="navbar-brand ml-2" href="index.php"> <i class="fas fa-ambulance"></i>&nbsp;&nbsp;Medical campany</a>
+  <a class="navbar-brand ml-2" href="index.php"> <i class="fas fa-ambulance"></i>&nbsp;&nbsp;Infinity Petals</a>
 
   <!-- Toggler/collapsibe Button -->
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
@@ -25,6 +25,9 @@
   <!-- Navbar links -->
     <div class="collapse navbar-collapse" id="collapsibleNavbar">
     <ul class="navbar-nav ml-auto">
+    <li class="nav-item">
+        <a class="nav-link active" href="../index.php">Home</a>
+      </li>
       <li class="nav-item">
         <a class="nav-link active" href="index.php">Products</a>
       </li>

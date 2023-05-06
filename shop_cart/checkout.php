@@ -28,9 +28,9 @@ $allItems = implode(", ",$items);
 </head>
 <body>
 
-<nav class="navbar navbar-expand-md bg-dark navbar-dark">
+<nav class="navbar navbar-expand-md bg-primary navbar-dark">
   <!-- Brand -->
-  <a class="navbar-brand" href="index.php"> <i class="fas fa-ambulance"></i>&nbsp;&nbsp;Medical campany</a>
+  <a class="navbar-brand" href="index.php"> <i class="fas fa-ambulance"></i>&nbsp;&nbsp;Infinity Petals</a>
 
   <!-- Toggler/collapsibe Button -->
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">

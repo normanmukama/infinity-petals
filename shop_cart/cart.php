@@ -13,7 +13,7 @@ session_start();
 </head>
 <body>
 
-<nav class="navbar navbar-expand-md bg-dark navbar-dark">
+<nav class="navbar navbar-expand-md bg-primary navbar-primary">
   <!-- Brand -->
   <a class="navbar-brand" href="index.php"> <i class="fas fa-ambulance"></i>&nbsp;&nbsp;INFINITY PETALS</a>
 

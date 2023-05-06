@@ -285,54 +285,7 @@ session_start();
        
 
     <!-- shop by occasion starts -->
-    <div class="container bg-danger">
-      <div class="row">
-        <h3 class="text-center">SHOP BY OCCASION</h3>
-        <span>Delete me</span>
-        <p class="text-center">Get unlimited flower collections today from Infinity Petals today</p>
-      </div>
-
-      <div class="row" >
-        <div class="col-lg-3  col-md-3 col-sm-3" data-scroll-reveal="enter from the bottom after 0.4s">
-          <div class="about-div">
-            <center>  <img class="img" src="assets/img/sun.jpg" style="width:200px;height:200px;" />
-              <h4 style="color: #2d3d5a;">BRIDAL</h4>
-            </center>
-              <a class="btn btn-info btn-set pr-4" href="" >Add to cart</a>
-          </div>
-        </div>
-        
-        <div class="col-lg-3  col-md-3 col-sm-3" data-scroll-reveal="enter from the bottom after 0.4s">
-          <div class="about-div">
-            <center>  <img class="img" src="assets/img/T128-2A.jpg" style="width:200px;height:200px;" />
-              <h4>OFFICE FLOWERS</h4>
-            </center>
-              <a class="btn btn-info btn-set pr-4" href="" >Add to cart</a>
-          </div>
-        </div>
-
-        <div class="col-lg-3  col-md-3 col-sm-3" data-scroll-reveal="enter from the bottom after 0.4s">
-          <div class="about-div">
-            <center>  <img class="img" src="assets/img/R&L.jpg" style="width:200px;height:200px;" />
-              <h4>ASORTED</h4>
-            </center>
-              <a class="btn btn-info btn-set pr-4" href="" >Add to cart</a>
-          </div>
-        </div>
-
-        <div class="col-lg-3  col-md-3 col-sm-3" data-scroll-reveal="enter from the bottom after 0.4s">
-          <div class="about-div">
-            <center>  <img class="img" src="assets/img/Tnx2.jpg" style="width:200px;height:200px;" />
-              <h4>ROMANCE</h4>
-            </center>
-              <a class="btn btn-info btn-set pr-4" href="" >Add to cart</a>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-       
-      </div>
-    </div>
+    
     <!-- shop by occasion ends -->
     <div id="course-sec" class="container set-pad">
       <div class="row text-center">

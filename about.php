@@ -12,7 +12,7 @@
   </head>
   <body>
 
-  <nav class="navbar navbar-expand-sm navbar-light bg-light">
+  <!-- <nav class="navbar navbar-expand-sm navbar-light bg-light">
     <a class="navbar-brand" href="#">Infinity nav</a>
     <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
         aria-expanded="false" aria-label="Toggle navigation">
@@ -39,7 +39,9 @@
         <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
       </form>
     </div>
-  </nav>  
+  </nav>   -->
+
+  <?php include 'header.php'; ?>
 
    
    
@@ -59,7 +61,7 @@
     <div class="container">
           <div class="row">
            <div class="col-md-6">
-             <img class="img-fluid" src="assets/img/person-3.png" alt="">
+             <img class="img-fluid" src="assets/img/girl.jpg" alt="">
            </div>
         <div class="col-md-6">
           <div class="">
