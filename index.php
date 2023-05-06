@@ -21,50 +21,7 @@ session_start();
  
 </head>
 <body >
-   
- <!-- <div class="navbar navbar-inverse navbar-fixed-top " id="menu">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#"><img class="logo-custom" src="assets/img/infinity4.jpeg" alt=""  /></a>
-            </div>
-            <div class="navbar-collapse collapse move-me">
-                <ul class="nav navbar-nav navbar-right">
-                    <li ><a href="#home">HOME</a></li>
-                     <li><a href="#testimonials-sec">TESTIMONIALS</a></li>
-                     <li class="nav-item dropdown">
-                    <a class="nav-link text-light" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">SHOP BY OCCASSION</a>
-                    <div class="dropdown-menu bg-primary pl-3" aria-labelledby="dropdownId">
-                        <a class="dropdown-item" href="curriculum.php">Curriculum</a>
-                        <a class="dropdown-item" href="application.php">Admission</a>
-                        <a class="dropdown-item" href="facilities.php">Facilites</a>
-                        <a class="dropdown-item" href="co-curricular.php">Co_curricular activites</a>
-                    </div>
-                   </li>
-                   <li class="nav-item dropdown">
-                      <a class="nav-link text-light" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">EVENTS</a>
-                      <div class="dropdown-menu bg-primary pl-3" aria-labelledby="dropdownId">
-                           <a class="dropdown-item" href="curriculum.php">CORPORATE EVENT FLOWERS</a>
-                           <a class="dropdown-item" href="application.php">Admission</a>
-                           <a class="dropdown-item" href="facilities.php">Facilites</a>
-                           <a class="dropdown-item" href="co-curricular.php">Co_curricular activites</a>
-                      </div>
-                   </li>
-                    
-                     <li><a href="#brand-sec">BRANDS</a></li>
-					           <li><a href="contact.php">CONTACT US</a></li>
-                     
-                </ul>
-
-                
-            </div>
-           
-        </div>
-    </div> -->
+ 
      
        <div class="home-sec" id="home" >
            <div class="overlay">

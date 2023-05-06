@@ -41,7 +41,7 @@ if(!$_SESSION['admin_username'])
 					
 		if($imgFile)
 		{
-			$upload_dir = 'item_images/'; // upload directory	
+			$upload_dir = 'item_images/'; // upload directory		
 			$imgExt = strtolower(pathinfo($imgFile,PATHINFO_EXTENSION)); // get image extension
 			$valid_extensions = array('jpeg', 'jpg', 'png', 'gif'); // valid extensions
 			$itempic = rand(1000,1000000).".".$imgExt;

@@ -13,7 +13,7 @@ session_start();
 </head>
 <body>
 
-<nav class="navbar navbar-expand-md bg-primary navbar-primary">
+<nav class="navbar navbar-expand-md bg-primary navbar-dark">
   <!-- Brand -->
   <a class="navbar-brand" href="index.php"> <i class="fas fa-ambulance"></i>&nbsp;&nbsp;INFINITY PETALS</a>
 
@@ -129,7 +129,7 @@ session_start();
     </div>
   </div>
  </div>
-
+ <?php include '../footer.php'; ?>
  <!-- jQuery library -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 

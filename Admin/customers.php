@@ -224,59 +224,27 @@ include("config.php");
                 <h2 style="color:white" class="modal-title" id="myModalLabel">Upload Items</h2>
               </div>
               <div class="modal-body">
-         
-				
-			
-				
-				 <form enctype="multipart/form-data" method="post" action="additems.php">
-                   <fieldset>
-					
-						
-                            <p>Name of Item:</p>
-                            <div class="form-group">
-							
-                                <input class="form-control" placeholder="Name of Item" name="item_name" type="text" required>
-                           
-							 
-							</div>
-							
-							
-							
-							
-							
-							
-							
-							
-							<p>Price:</p>
-                            <div class="form-group">
-							
-                                <input id="priceinput" class="form-control" placeholder="Price" name="item_price" type="text" required>
-                           
-							 
-							</div>
-							
-							
-							<p>Choose Image:</p>
-							<div class="form-group">
-						
-							 
-                                <input class="form-control"  type="file" name="item_image" accept="image/*" required/>
-                           
-							</div>
-				   
-				   
-					 </fieldset>
-                  
-            
-              </div>
-              <div class="modal-footer">
-               
-                <button class="btn btn-success btn-md" name="item_save">Save</button>
-				
-				 <button type="button" class="btn btn-danger btn-md" data-dismiss="modal">Cancel</button>
-				
-				
-				   </form>
+
+				    <form enctype="multipart/form-data" method="post" action="additems.php">
+                <fieldset>
+                  <p>Name of Item:</p>
+                  <div class="form-group">
+                    <input class="form-control" placeholder="Name of Item" name="item_name" type="text" required>
+                  </div>
+                  <p>Price:</p>
+                  <div class="form-group">
+                    <input id="priceinput" class="form-control" placeholder="Price" name="item_price" type="text" required>
+                  </div>
+                  <p>Choose Image:</p>
+                  <div class="form-group">
+                    <input class="form-control"  type="file" name="item_image" accept="image/*" required/>           
+                  </div>
+					      </fieldset>
+                </div>
+                <div class="modal-footer">
+                  <button class="btn btn-success btn-md" name="item_save">Save</button>
+				          <button type="button" class="btn btn-danger btn-md" data-dismiss="modal">Cancel</button>
+				    </form>
               </div>
             </div>
           </div>

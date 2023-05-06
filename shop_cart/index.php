@@ -42,7 +42,9 @@
   </div>
 </nav>
 
- 
+ <div class="container">
+  <div style="height:2.2rem; width:100%;"></div>
+ </div>
 
  <div class="container">
 
@@ -58,7 +60,7 @@
       <div class="col-sm-6 col-md-4 col-lg-3 mb-2">
           <div class="card-deck">
                 <div class="face">
-                    <img src="images/<?= $row['item_image'] ?>" class="card-img-top" height="180px">
+                    <img src="../admin/item_images/<?= $row['item_image'] ?>" class="card-img-top" height="180px">
                     <div class="card-body p-1">
                         <p class=" text-center title"><?= $row['item_name']?></p>
                         <p class="title1 text-center"><span>Ugshs</span>&nbsp;
