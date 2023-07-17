@@ -21,8 +21,6 @@ session_start();
  
 </head>
 <body >
- 
-     
        <div class="home-sec" id="home" >
            <div class="overlay">
    <div class="container">
@@ -273,25 +271,24 @@ session_start();
                    <fieldset>
 					
 							<div class="form-group">
-                                <input class="form-control" placeholder="Firstname" name="ruser_firstname" type="text" required>
+                <input class="form-control" placeholder="Firstname" name="ruser_firstname" type="text" required>
 							</div>
 							
 							<div class="form-group">
-                                <input class="form-control" placeholder="Lastname" name="ruser_lastname" type="text" required>
+                <input class="form-control" placeholder="Lastname" name="ruser_lastname" type="text" required>
 							</div>
 							
 							<div class="form-group">
-                                <input class="form-control" placeholder="Address" name="ruser_address" type="text" required>
+                <input class="form-control" placeholder="Address" name="ruser_address" type="text" required>
 							</div>
 							
-                            <div class="form-group">
-                                <input class="form-control" placeholder="Email" name="ruser_email" type="email" required>
+              <div class="form-group">
+                  <input class="form-control" placeholder="Email" name="ruser_email" type="email" required>
 							</div>
 							
 							<div class="form-group">
-                                <input class="form-control" placeholder="Password" name="ruser_password" type="password" required>
+                <input class="form-control" placeholder="Password" name="ruser_password" type="password" required>
 							</div>
-				   
 					 </fieldset>
                   
             

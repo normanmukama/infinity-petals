@@ -32,7 +32,7 @@ if(!$_SESSION['user_email'])
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EDGE Skateshop</title>
+    <title>Infinity petals</title>
 	 <link rel="shortcut icon" href="../assets/img/logo.png" type="image/x-icon" />
     <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css" />
@@ -191,17 +191,13 @@ if(!$_SESSION['user_email'])
 		<br />	
 			 <div class="alert alert-info">
                         
-                        &nbsp; &nbsp; Welcome to EDGE Skateshop! So, if you're looking for an Element skateboard, why not visit the EDGE Skateshop? 
-						It's that easy. If you have a favorite skate brand, 
-						this is the easiest and most straightforward way to get it.A lot of skate brands who are well known for one thing, 
-						like decks, also sell completes with 
-						their own special wheels, along with other brands for things like trucks, bearings, etc.
+                        &nbsp; &nbsp;  WELCOME TO INFINITY PETALS SHOPE. ENJOY
                     </div>
 					<br />
 			
 			<div class="alert alert-default" style="background-color:#033c73;">
                        <p style="color:white;text-align:center;">
-                       &copy 2016 EDGE Skateshop| All Rights Reserved |  Design by : EDGE Team
+                       &copy 2023 INFINITY petals| All Rights Reserved |  Design by : Norman Dev
 
 						</p>
                         

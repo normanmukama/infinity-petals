@@ -8,9 +8,7 @@ if(!$_SESSION['user_email'])
     header("Location: ../index.php");
     // header("Location: index.php");
 }
-
 ?>
-
 <?php
  include("config.php");
  extract($_SESSION); 
@@ -298,7 +296,7 @@ if(!$_SESSION['user_email'])
 
 <?php
 
-$query1=mysqli_connect("localhost","root","adminnorman");
+$query1=mysqli_connect("localhost","root","");
 mysqli_select_db($query1, "edgedata");
 
 $start=0;
@@ -342,7 +340,7 @@ while($query2=mysqli_fetch_array($query))
 
 echo "<div class='container'>";
 echo "</div>";
-$query2=mysqli_connect("localhost","root","adminnorman");
+$query2=mysqli_connect("localhost","root","");
 mysqli_select_db($query2, "edgedata");
 
 $rows=mysqli_num_rows(mysqli_query($query2,"SELECT * from items"));
