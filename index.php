@@ -14,10 +14,10 @@ session_start();
 	 <link rel="shortcut icon" href="assets/img/infinity4.jpeg" type="image/x-icon" />
 
 
-    <link href="assets/css/bootstrap.css" rel="stylesheet" />
+  <link href="assets/css/bootstrap.css" rel="stylesheet" />
 	<link href="assets/css/font-awesome.min.css" rel="stylesheet" />
 	<link href="assets/css/flexslider.css" rel="stylesheet" />
-    <link href="assets/css/style.css" rel="stylesheet" />    
+  <link href="assets/css/style.css" rel="stylesheet" />    
  
 </head>
 <body >

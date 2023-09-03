@@ -10,23 +10,21 @@ if(!$_SESSION['user_email'])
 ?>
 
 <?php
- include("config.php");
- extract($_SESSION); 
-		  $stmt_edit = $DB_con->prepare('SELECT * FROM users WHERE user_email =:user_email');
-		$stmt_edit->execute(array(':user_email'=>$user_email));
-		$edit_row = $stmt_edit->fetch(PDO::FETCH_ASSOC);
-		extract($edit_row);
+    include("config.php");
+    extract($_SESSION); 
+            $stmt_edit = $DB_con->prepare('SELECT * FROM users WHERE user_email =:user_email');
+            $stmt_edit->execute(array(':user_email'=>$user_email));
+            $edit_row = $stmt_edit->fetch(PDO::FETCH_ASSOC);
+            extract($edit_row);
+?>
 		
-		?>
-		
-		<?php
- include("config.php");
-		  $stmt_edit = $DB_con->prepare("select sum(order_total) as total from orderdetails where user_id=:user_id and order_status='Ordered'");
-		$stmt_edit->execute(array(':user_id'=>$user_id));
-		$edit_row = $stmt_edit->fetch(PDO::FETCH_ASSOC);
-		extract($edit_row);
-		
-		?>
+<?php
+    include("config.php");
+            $stmt_edit = $DB_con->prepare("select sum(order_total) as total from orderdetails where user_id=:user_id and order_status='Ordered'");
+            $stmt_edit->execute(array(':user_id'=>$user_id));
+            $edit_row = $stmt_edit->fetch(PDO::FETCH_ASSOC);
+            extract($edit_row);
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -39,10 +37,7 @@ if(!$_SESSION['user_email'])
     <link rel="stylesheet" type="text/css" href="css/local.css" />
 
     <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
-    <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
-
-   
-    
+    <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>  
 </head>
 <body>
     <div id="wrapper">
@@ -64,17 +59,14 @@ if(!$_SESSION['user_email'])
 					<li><a href="orders.php"> &nbsp; <span class='glyphicon glyphicon-list-alt'></span> My Ordered Items</a></li>
 					<li><a href="view_purchased.php"> &nbsp; <span class='glyphicon glyphicon-eye-open'></span> Previous Items Ordered</a></li>
 					<li><a data-toggle="modal" data-target="#setAccount"> &nbsp; <span class='fa fa-gear'></span> Account Settings</a></li>
-					<li><a href="logout.php"> &nbsp; <span class='glyphicon glyphicon-off'></span> Logout</a></li>
-					
-                    
+					<li><a href="logout.php"> &nbsp; <span class='glyphicon glyphicon-off'></span> Logout</a></li> 
                 </ul>
                 <ul class="nav navbar-nav navbar-right navbar-user">
                     <li class="dropdown messages-dropdown">
                         <a href="#"><i class="fa fa-calendar"></i>  <?php
                             $Today=date('y:m:d');
                             $new=date('l, F d, Y',strtotime($Today));
-                            echo $new; ?></a>
-                        
+                            echo $new; ?></a> 
                     </li>
 					<li class="dropdown user-dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class='glyphicon glyphicon-shopping-cart'></span> Total Price Ordered: &#8369; <?php echo $total; ?> </b></a>

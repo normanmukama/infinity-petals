@@ -20,9 +20,9 @@ if(isset($_POST['user_login']))
     {
 	 echo "<script>alert('You're successfully login!')</script>";
        
- echo "<script>window.open('Customers/index.php','_self')</script>";
+    echo "<script>window.open('Customers/index.php','_self')</script>";
        
-$_SESSION['user_email']=$user_email;
+    $_SESSION['user_email']=$user_email;
 
 
 
